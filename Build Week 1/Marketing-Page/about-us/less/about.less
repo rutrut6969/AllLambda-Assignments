@@ -1,0 +1,185 @@
+// Font Imports
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans+Condensed:300&display=swap');
+@import '../../LESS/mix-ins.less';
+@import '../../LESS/variables.less';
+@import '../../LESS/reset.less';
+@import '../../LESS/nav.less';
+
+// Main Content
+body {
+  nav {
+    .logo-link {
+      .logo {
+        background-image: url(../../Assets/logo.png);
+      }
+      .links {
+        #home {
+          margin-left: -50%;
+        }
+      }
+    }
+  }
+  background-color: @page-bg;
+  .wrapper {
+    // width: 100%;
+    .flex(center, center, row wrap);
+    margin-top: 5%;
+    .top {
+      .card(50%);
+      width: 97%;
+      .flex(center, center, row wrap);
+      margin-bottom: 5%;
+      // margin-top: 5%;
+
+      .img-wrap {
+        .w50();
+        height: 300px;
+        // .bordered();
+        margin-top: 2%;
+        .flex(center, center column);
+        .img {
+          background-image: url(../Assets/schrese-holloway.png);
+          .img();
+        } // Closes Img
+      } // Closes Img-wrap
+
+      .wrap {
+        .flex(center, center, column);
+        // .bordered();
+        // margin-left: -12%;
+        h3 {
+          font-size: 50px;
+          font-weight: bold;
+          margin-left: 5%;
+          width: 100%;
+          .font(@header-font);
+        } // Closes H3
+        p {
+          .genfont(@general-font, bold);
+          width: 100%;
+          line-height: 2;
+          padding-left: 5%;
+        }
+      } // Closes Wrap
+    } // Closes top
+    .card-wrapper {
+      .flex();
+      width: 100%;
+      .left {
+        .w50();
+        // .bordered();
+        .flex(center, center, column);
+
+        .card {
+          //   .bordered();
+          .flex();
+          width: 100%;
+          .card(100%);
+          margin-bottom: 5%;
+          padding-left: 3%;
+          margin-left: 3%;
+          .miranda {
+            background-image: url(../Assets/miranda-mussleman.png);
+            .img();
+          } // Closes Miranda
+          .edvin {
+            background-image: url(../Assets/edvin-cartoon.png);
+            .img();
+          } // Closes Edvin
+          .wrap {
+            .flex(center, center, column wrap);
+            width: 50%;
+            margin-left: 5%;
+            padding-right: 3%;
+            h3 {
+              .font(@header-font);
+              text-align: left;
+            }
+            p {
+              .genfont(@general-font, bold);
+            }
+          } // Closes wrap
+
+          // .card();
+        } // Closes Card
+      } // Closes Left
+      .right {
+        .w50();
+        // .bordered();
+        .flex(center, center, column);
+        margin-left: 3%;
+
+        .card {
+          //   .bordered();
+          .flex();
+          width: 100%;
+          .card(100%);
+          margin-bottom: 5%;
+          padding-left: 3%;
+          margin-right: 3%;
+          .isaac {
+            background-image: url(../Assets/isaac-rutledge.png);
+            .img();
+          } // Closes Miranda
+          .naomi {
+            background-image: url(../Assets/naomi-torres.png);
+            .img();
+          } // Closes Edvin
+          .wrap {
+            .flex(center, center, column wrap);
+            width: 50%;
+            margin-left: 5%;
+            padding-right: 3%;
+            h3 {
+              .font(@header-font);
+              text-align: left;
+            }
+            p {
+              .genfont(@general-font, bold);
+            }
+          } // Closes wrap
+
+          // .card();
+        } // Closes Card
+      } // Closes Left
+    } // Closes Card-Wrapper
+    .big-card {
+      .flex(center, center, column);
+      .card(100%);
+      height: 900px;
+      .wedding-page-img {
+        background-image: url(../Assets/wedding-planner-start-page.png);
+        .img();
+        height: 480px;
+        width: 100%;
+      } // Closes Wedding-Page-Img
+      .con-wrap {
+        margin-top: 3%;
+        .flex(center, center, column);
+        h2 {
+          text-align: center;
+          .font(@header-font);
+        } // Closes h2
+        p {
+          width: 75%;
+          padding: 5%;
+          .font(@general-font);
+          font-weight: bold;
+          line-height: 1.5;
+        } // Closes p
+        .mission {
+          .font(@header-font);
+        } // Closes Mission
+        .project-info {
+          margin-top: -3%;
+        }
+        .mission-con {
+          justify-self: center;
+          align-self: center;
+          margin-left: 12%;
+          margin-top: -4%;
+        } // Closes Mission-Con
+      } // Closes con-wrap
+    } // Closes Big-card
+  } // Closes wrapper
+} // Closes Body

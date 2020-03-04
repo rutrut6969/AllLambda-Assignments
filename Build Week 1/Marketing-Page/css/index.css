@@ -1,0 +1,302 @@
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMQg.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 50px;
+  box-shadow: 2px 2px 10px #123456;
+  border-radius: 5px;
+}
+nav .nav-wrap {
+  display: flex;
+  justify-content: space-evenly flex-end;
+  align-items: center;
+  flex-flow: row;
+  width: 100%;
+}
+nav .nav-wrap .logo {
+  background-image: url(../Assets/logo.png);
+  width: 100px;
+  height: 100px;
+  background-size: 100% 100%;
+  margin-left: 10%;
+}
+nav .nav-wrap .logo-link {
+  width: 100px;
+  height: 100px;
+}
+nav .nav-wrap .links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row;
+  width: 45%;
+  opacity: 1;
+}
+nav .nav-wrap .links a {
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 0;
+}
+nav .nav-wrap .links a:hover {
+  color: blueviolet;
+}
+nav .nav-wrap .links .home {
+  margin-left: -67%;
+}
+@media (max-width: 800px) {
+  nav .nav-wrap .links .home {
+    margin-left: 5%;
+  }
+}
+nav .nav-wrap .links #about {
+  margin-left: -61%;
+}
+@media (max-width: 800px) {
+  nav .nav-wrap .links #about {
+    margin-left: 10%;
+  }
+}
+nav .nav-wrap .links .about {
+  margin-left: -79%;
+}
+@media (max-width: 700px) {
+  nav .nav-wrap .links .about {
+    margin-left: 5%;
+  }
+}
+body {
+  background: url(../Assets/chairoverlay.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .wrapper header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  opacity: 1;
+  z-index: 0;
+  color: #ffffff;
+  margin-bottom: 10%;
+}
+@media (max-width: 800px) {
+  body .wrapper header {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 700px) {
+  body .wrapper header {
+    width: 100%;
+  }
+}
+body .wrapper header h1 {
+  margin-top: 3%;
+  width: 100%;
+  font-size: 80px;
+  z-index: 1;
+}
+@media (max-width: 800px) {
+  body .wrapper header h1 {
+    font-size: 60px;
+    border-bottom: 2px dashed gray;
+  }
+}
+@media (max-width: 700px) {
+  body .wrapper header h1 {
+    margin-left: 0;
+  }
+}
+@media (max-width: 700px) {
+  body .wrapper header h1 span {
+    width: 100%;
+    font-size: 100px;
+    display: block;
+  }
+}
+body .wrapper header p {
+  width: 100%;
+  margin-top: 0.5%;
+  font-size: 30px;
+}
+@media (max-width: 800px) {
+  body .wrapper header p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  body .wrapper header p {
+    margin-right: 10%;
+  }
+}
+body .wrapper section {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+body .wrapper section .wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  body .wrapper section .wrap {
+    margin: 3%;
+  }
+}
+@media (max-width: 700px) {
+  body .wrapper section .wrap {
+    flex-direction: column;
+  }
+}
+body .wrapper section .wrap .img {
+  display: block;
+  background: url(../Assets/flowers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3%;
+  z-index: 1;
+  width: 45%;
+  height: 300px;
+  margin-top: 3%;
+  background-position: center;
+  border-radius: 8px;
+}
+@media (max-width: 800px) {
+  body .wrapper section .wrap .img {
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  body .wrapper section .wrap .img {
+    width: 95%;
+  }
+}
+body .wrapper section .wrap .imgbottom {
+  background: url(../Assets/people.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3%;
+  background-position: center;
+  border-radius: 8px;
+}
+@media (max-width: 800px) {
+  body .wrapper section .wrap .imgbottom {
+    width: 50%;
+    background-position: center;
+  }
+}
+@media (max-width: 700px) {
+  body .wrapper section .wrap .imgbottom {
+    width: 95%;
+  }
+}
+body .wrapper section .wrap .con {
+  width: 30%;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+@media (max-width: 800px) {
+  body .wrapper section .wrap .con {
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  body .wrapper section .wrap .con {
+    width: 95%;
+    margin-bottom: 10%;
+  }
+}
+body .wrapper section .learn-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  width: 105px;
+  height: 40px;
+  color: #ffffff;
+  background-color: navy;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px 0 10px 0;
+  text-decoration: none;
+  margin-left: 30%;
+}
+body .wrapper section .learn-more:hover {
+  color: navy;
+  background-color: #ffffff;
+  transition: 0.4s ease-in;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .wrapper section .top {
+  margin-left: 70%;
+  margin-top: -7%;
+  margin-bottom: 10%;
+}
+@media (max-width: 800px) {
+  body .wrapper section .top {
+    margin-top: -15%;
+    margin-left: 65%;
+  }
+}
+@media (max-width: 700px) {
+  body .wrapper section .top {
+    display: none;
+  }
+}
+body .wrapper section .btnbottom {
+  margin-top: -7%;
+  margin-bottom: 10%;
+  margin-left: 24%;
+}
+@media (max-width: 800px) {
+  body .wrapper section .btnbottom {
+    margin-top: -15%;
+    margin-left: 20%;
+  }
+}
+@media (max-width: 700px) {
+  body .wrapper section .btnbottom {
+    margin: 5%;
+    margin-left: 26%;
+    margin-top: -4%;
+    width: 40%;
+    height: 50px;
+  }
+}
+body .wrapper section .bottom {
+  flex-direction: row-reverse;
+}
+@media (max-width: 700px) {
+  body .wrapper section .bottom {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,337 @@
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMQg.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 50px;
+  box-shadow: 2px 2px 10px #123456;
+  border-radius: 5px;
+}
+nav .nav-wrap {
+  display: flex;
+  justify-content: space-evenly flex-end;
+  align-items: center;
+  flex-flow: row;
+  width: 100%;
+}
+nav .nav-wrap .logo {
+  background-image: url(../Assets/logo.png);
+  width: 100px;
+  height: 100px;
+  background-size: 100% 100%;
+  margin-left: 10%;
+}
+nav .nav-wrap .logo-link {
+  width: 100px;
+  height: 100px;
+}
+nav .nav-wrap .links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row;
+  width: 45%;
+  opacity: 1;
+}
+nav .nav-wrap .links a {
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 0;
+}
+nav .nav-wrap .links a:hover {
+  color: blueviolet;
+}
+nav .nav-wrap .links .home {
+  margin-left: -67%;
+}
+@media (max-width: 800px) {
+  nav .nav-wrap .links .home {
+    margin-left: 5%;
+  }
+}
+nav .nav-wrap .links #about {
+  margin-left: -61%;
+}
+@media (max-width: 800px) {
+  nav .nav-wrap .links #about {
+    margin-left: 10%;
+  }
+}
+nav .nav-wrap .links .about {
+  margin-left: -79%;
+}
+@media (max-width: 700px) {
+  nav .nav-wrap .links .about {
+    margin-left: 5%;
+  }
+}
+body {
+  background-color: #123456be;
+}
+body nav .logo-link .logo {
+  background-image: url(../../Assets/logo.png);
+}
+body nav .logo-link .links #home {
+  margin-left: -50%;
+}
+body .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-top: 5%;
+}
+body .wrapper .top {
+  width: 50%;
+  height: 300px;
+  background-color: rgba(128, 128, 128, 0.4);
+  box-shadow: 2px 2px 10px #123456;
+  border-radius: 10px;
+  width: 97%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 5%;
+}
+body .wrapper .top .img-wrap {
+  width: 50%;
+  height: 300px;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center column;
+  flex-flow: row;
+}
+body .wrapper .top .img-wrap .img {
+  background-image: url(../Assets/schrese-holloway.png);
+  background-repeat: none;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 50%;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #123456;
+}
+body .wrapper .top .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+body .wrapper .top .wrap h3 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 5%;
+  width: 100%;
+  font-family: 'Merriweather', serif;
+}
+body .wrapper .top .wrap p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  width: 100%;
+  line-height: 2;
+  padding-left: 5%;
+}
+body .wrapper .card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  width: 100%;
+}
+body .wrapper .card-wrapper .left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+body .wrapper .card-wrapper .left .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(128, 128, 128, 0.4);
+  box-shadow: 2px 2px 10px #123456;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding-left: 3%;
+  margin-left: 3%;
+}
+body .wrapper .card-wrapper .left .card .miranda {
+  background-image: url(../Assets/miranda-mussleman.png);
+  background-repeat: none;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 50%;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #123456;
+}
+body .wrapper .card-wrapper .left .card .edvin {
+  background-image: url(../Assets/edvin-cartoon.png);
+  background-repeat: none;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 50%;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #123456;
+}
+body .wrapper .card-wrapper .left .card .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 50%;
+  margin-left: 5%;
+  padding-right: 3%;
+}
+body .wrapper .card-wrapper .left .card .wrap h3 {
+  font-family: 'Merriweather', serif;
+  text-align: left;
+}
+body .wrapper .card-wrapper .left .card .wrap p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+}
+body .wrapper .card-wrapper .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-left: 3%;
+}
+body .wrapper .card-wrapper .right .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(128, 128, 128, 0.4);
+  box-shadow: 2px 2px 10px #123456;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding-left: 3%;
+  margin-right: 3%;
+}
+body .wrapper .card-wrapper .right .card .isaac {
+  background-image: url(../Assets/isaac-rutledge.png);
+  background-repeat: none;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 50%;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #123456;
+}
+body .wrapper .card-wrapper .right .card .naomi {
+  background-image: url(../Assets/naomi-torres.png);
+  background-repeat: none;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 50%;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #123456;
+}
+body .wrapper .card-wrapper .right .card .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 50%;
+  margin-left: 5%;
+  padding-right: 3%;
+}
+body .wrapper .card-wrapper .right .card .wrap h3 {
+  font-family: 'Merriweather', serif;
+  text-align: left;
+}
+body .wrapper .card-wrapper .right .card .wrap p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+}
+body .wrapper .big-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(128, 128, 128, 0.4);
+  box-shadow: 2px 2px 10px #123456;
+  border-radius: 10px;
+  height: 900px;
+}
+body .wrapper .big-card .wedding-page-img {
+  background-image: url(../Assets/wedding-planner-start-page.png);
+  background-repeat: none;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 50%;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #123456;
+  height: 480px;
+  width: 100%;
+}
+body .wrapper .big-card .con-wrap {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+body .wrapper .big-card .con-wrap h2 {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+body .wrapper .big-card .con-wrap p {
+  width: 75%;
+  padding: 5%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+}
+body .wrapper .big-card .con-wrap .mission {
+  font-family: 'Merriweather', serif;
+}
+body .wrapper .big-card .con-wrap .project-info {
+  margin-top: -3%;
+}
+body .wrapper .big-card .con-wrap .mission-con {
+  justify-self: center;
+  align-self: center;
+  margin-left: 12%;
+  margin-top: -4%;
+}
